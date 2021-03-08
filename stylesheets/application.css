@@ -1,7 +1,15 @@
 /* load the default Redmine stylesheet */
 @import url(../../../stylesheets/application.css);
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
-/* add a logo in the header */
+body {
+    font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;;
+}
+
+#content h1, h2, h3, h4 {
+    color: #0b1d46;
+}
+
 #header {
     background: #507AAA url(../images/Reach-Background.jpg) no-repeat 2px;
     min-height: 13em;
@@ -19,23 +27,83 @@
 
 #top-menu {
     background: #0c0a32;
-    height: 50px;
+    height: 30px;
+    padding: 15px;
+    font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;;
 }
 
 #top-menu > ul {
-    font-size: 1.5em;
+    font-size: 1.8em;
+}
+
+#top-menu li {
+    margin-right: 10px;
+
+}
+
+#top-menu li > a:hover {
+    text-decoration: none;
+    color: #c6c6c6;
+
 }
 
 #account {
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 #loggedas {
-    font-size: 1.5em;
+    font-size: 1.8em;
+}
+
+#loggedas a:hover {
+    text-decoration: none;
+    color: #c6c6c6;
+
 }
 
 #reach-logo {
     margin: 20px;
     max-height: 60px;
     width: auto;
+}
+
+#content .tabs ul li a.selected {
+    color: #0b1d46;
+}
+
+#quick-search {
+    margin: 20px;
+}
+
+#quick-search > form > label > a {
+    font-size: 1.5em;
+}
+#quick-search > form > label > a:hover {
+    text-decoration: none;
+}
+
+#quick-search #q {
+    height: 35px;
+    margin-left: 10px;
+    font-size: 1.5em;
+}
+
+#project-jump.drdn {
+    width: 200px;
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+#project-jump .drdn-trigger {
+    height: 35px;
+}
+
+
+@media screen and (max-width: 899px){
+    #reach-logo {
+        display: none;
+    }
+    .flyout-menu {
+        background-color: #0b1d46 !important;
+    }
 }
