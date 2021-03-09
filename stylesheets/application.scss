@@ -1,0 +1,252 @@
+/* load the default Redmine stylesheet */
+@import "../../../stylesheets/application.css";
+@import "https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap";
+/* move the project menu to the right */
+body {
+  font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;
+}
+#content {
+  h1 {
+    color: #0b1d46;
+  }
+  .tabs {
+    ul {
+      li {
+        a.selected {
+          color: #0b1d46;
+        }
+      }
+    }
+    font-size: 1.3em;
+  }
+}
+h2 {
+  color: #0b1d46;
+}
+h3 {
+  color: #0b1d46;
+  font-size: 1.6em;
+}
+h4 {
+  color: #0b1d46;
+}
+#header {
+  background: #507AAA url(../images/Reach-Background.jpg) no-repeat 2px;
+  min-height: 13em;
+  >h1 {
+    display: none;
+  }
+}
+#main-menu {
+  left: auto;
+  right: 0px;
+  li {
+    a {
+      font-size: 1.5em;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    a.selected {
+      color: #0b1d46;
+    }
+  }
+}
+#top-menu {
+  background: #0c0a32;
+  height: 30px;
+  padding: 15px;
+  font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;
+  >ul {
+    font-size: 1.8em;
+  }
+  li {
+    margin-right: 10px;
+    >a {
+      &:hover {
+        text-decoration: none;
+        color: #c6c6c6;
+      }
+    }
+  }
+}
+#account {
+  font-size: 1.8em;
+}
+#loggedas {
+  font-size: 1.8em;
+  a {
+    &:hover {
+      text-decoration: none;
+      color: #c6c6c6;
+    }
+  }
+}
+#reach-logo {
+  margin: 20px;
+  max-height: 60px;
+  width: auto;
+}
+#login-form {
+  font-size: 1.3em;
+  color: white;
+  background-color: #0b1d46;
+  border: #0c0a32;
+}
+.lost_password {
+  color: white !important;
+  &:hover {
+    text-decoration: none !important;
+    color: #c6c6c6 !important;
+  }
+}
+#quick-search {
+  margin: 20px;
+  >form {
+    >label {
+      >a {
+        font-size: 1.5em;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  #q {
+    height: 35px;
+    margin-left: 10px;
+    font-size: 1.5em;
+    margin-top: 0;
+  }
+}
+#project-jump.drdn {
+  width: 200px;
+  display: inline-block;
+  font-size: 1.5em;
+}
+#project-jump {
+  .drdn-trigger {
+    height: 35px;
+  }
+}
+#query_form_content {
+  font-size: 1.2em;
+}
+.buttons {
+  font-size: 1.2em;
+}
+#errorExplanation {
+  font-size: 1.5em;
+}
+div.flash {
+  font-size: 1.5em;
+}
+.nodata {
+  font-size: 1.5em;
+}
+.warning {
+  font-size: 1.5em;
+}
+.conflict {
+  font-size: 1.5em;
+}
+p {
+  font-size: 1.5em;
+}
+#sidebar {
+  background-color: #0b1d46;
+  color: white;
+  h3 {
+    color: white;
+    font-size: 1.3em;
+  }
+  ul {
+    li {
+      color: white;
+      font-size: 1.2em;
+      label {
+        a {
+          color: white;
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+  a {
+    color: navajowhite;
+    &:hover {
+      color: #e7b773;
+      text-decoration: none;
+    }
+  }
+}
+input {
+  font-size: 1em;
+}
+select {
+  font-size: 1em;
+}
+textarea {
+  font-size: 1em;
+}
+button {
+  font-size: 1em;
+}
+#admin-menu {
+  a {
+    color: white;
+    font-size: 1.2em;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+.tabular {
+  label {
+    width: 230px;
+    margin-right: 10px;
+  }
+  input {
+    max-width: 80%;
+  }
+  select {
+    max-width: 80%;
+  }
+}
+legend {
+  font-size: 1.3em;
+}
+.contextual {
+  font-size: 1.3em;
+}
+.pagination {
+  ul.pages {
+    li {
+      a {
+        font-size: 1.3em;
+      }
+    }
+  }
+}
+.splitcontentleft {
+  >ul {
+    >li {
+      font-size: 1.3em;
+    }
+  }
+}
+.issue-report {
+  font-size: 1.3em;
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+@media screen and (max-width: 899px) {
+  #reach-logo {
+    display: none;
+  }
+  .flyout-menu {
+    background-color: #0b1d46 !important;
+  }
+}
