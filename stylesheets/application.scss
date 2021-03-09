@@ -149,9 +149,6 @@ div.flash {
 .conflict {
   font-size: 1.5em;
 }
-p {
-  font-size: 1.5em;
-}
 #sidebar {
   background-color: #0b1d46;
   color: white;
@@ -191,7 +188,10 @@ textarea {
 button {
   font-size: 1em;
 }
+
 #admin-menu {
+  background-color: #0b1d46;
+  padding: 20px;
   a {
     color: white;
     font-size: 1.2em;
