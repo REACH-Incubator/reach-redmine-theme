@@ -1,9 +1,9 @@
 /* load the default Redmine stylesheet */
 @import url(../../../stylesheets/application.css);
+/* load Google Fonts */
 @import "https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap";
-/* move the project menu to the right */
 body {
-  font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif; }
+  font-family: "Raleway", "Helvetica", "Arial", "Lucida", "sans-serif"; }
 
 #content h1 {
   color: #0b1d46; }
@@ -23,26 +23,26 @@ h4 {
   color: #0b1d46; }
 
 #header {
-  background: #507AAA url(../images/Reach-Background.jpg) no-repeat 2px;
+  background: #507aaa url("../images/Reach-Background.jpg") no-repeat 2px;
   min-height: 13em; }
   #header > h1 {
     display: none; }
 
 #main-menu {
   left: auto;
-  right: 0px; }
+  right: 0; }
   #main-menu li a {
     font-size: 1.5em;
     margin-left: 5px;
     margin-right: 5px; }
-  #main-menu li a.selected {
-    color: #0b1d46; }
+    #main-menu li a.selected {
+      color: #0b1d46; }
 
 #top-menu {
   background: #0c0a32;
   height: 30px;
   padding: 15px;
-  font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif; }
+  font-family: "Raleway", "Helvetica", "Arial", "Lucida", "sans-serif"; }
   #top-menu > ul {
     font-size: 1.8em; }
   #top-menu li {
@@ -67,33 +67,32 @@ h4 {
 
 #login-form {
   font-size: 1.3em;
-  color: white;
+  color: #ffffff;
   background-color: #0b1d46;
   border: #0c0a32; }
 
 .lost_password {
-  color: white !important; }
+  color: #ffffff !important; }
   .lost_password:hover {
     text-decoration: none !important;
     color: #c6c6c6 !important; }
 
 #quick-search {
   margin: 20px; }
-  #quick-search > form > label > a {
-    font-size: 1.5em; }
-    #quick-search > form > label > a:hover {
-      text-decoration: none; }
   #quick-search #q {
     height: 35px;
     margin-left: 10px;
     font-size: 1.5em;
     margin-top: 0; }
+  #quick-search > form > label > a {
+    font-size: 1.5em; }
+    #quick-search > form > label > a:hover {
+      text-decoration: none; }
 
 #project-jump.drdn {
   width: 200px;
   display: inline-block;
   font-size: 1.5em; }
-
 #project-jump .drdn-trigger {
   height: 35px; }
 
@@ -104,9 +103,6 @@ h4 {
   font-size: 1.2em; }
 
 #errorExplanation {
-  font-size: 1.5em; }
-
-div.flash {
   font-size: 1.5em; }
 
 .nodata {
@@ -120,21 +116,21 @@ div.flash {
 
 #sidebar {
   background-color: #0b1d46;
-  color: white; }
+  color: #ffffff; }
   #sidebar h3 {
-    color: white;
+    color: #ffffff;
     font-size: 1.3em; }
-  #sidebar ul li {
-    color: white;
-    font-size: 1.2em; }
-    #sidebar ul li label a {
-      color: white;
-      font-size: 1.2em; }
   #sidebar a {
-    color: navajowhite; }
+    color: #ffdead; }
     #sidebar a:hover {
       color: #e7b773;
       text-decoration: none; }
+  #sidebar ul li {
+    color: #ffffff;
+    font-size: 1.2em; }
+    #sidebar ul li label a {
+      color: #ffffff;
+      font-size: 1.2em; }
 
 input {
   font-size: 1em; }
@@ -152,10 +148,13 @@ button {
   background-color: #0b1d46;
   padding: 20px; }
   #admin-menu a {
-    color: white;
+    color: #ffffff;
     font-size: 1.2em; }
     #admin-menu a:hover {
       text-decoration: none; }
+    #admin-menu a.selected {
+      background-color: #507aaa;
+      color: #ffffff; }
 
 .tabular label {
   width: 230px;
@@ -171,22 +170,44 @@ legend {
 .contextual {
   font-size: 1.3em; }
 
-.pagination ul.pages li a {
-  font-size: 1.3em; }
-
-.splitcontentleft > ul > li {
-  font-size: 1.3em; }
-
 .issue-report {
   font-size: 1.3em; }
   .issue-report a:hover {
     text-decoration: none; }
+
+.box {
+  font-size: 1.2em; }
+
+input[type="submit"] {
+  height: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-width: medium;
+  border-color: #0c0a32;
+  color: #0c0a32;
+  font-size: 1.5em; }
 
 @media screen and (max-width: 899px) {
   #reach-logo {
     display: none; }
 
   .flyout-menu {
-    background-color: #0b1d46 !important; } }
+    background-color: #0b1d46 !important; }
+
+  #login-form input {
+    height: 32px !important; }
+  #login-form input[type=submit] {
+    height: 50px !important;
+    border-width: medium;
+    border-color: #0c0a32;
+    color: #0c0a32; } }
+div.flash {
+  font-size: 1.5em; }
+
+.pagination ul.pages li a {
+  font-size: 1.3em; }
+
+.splitcontentleft > ul > li {
+  font-size: 1.3em; }
 
 /*# sourceMappingURL=application.css.map */
