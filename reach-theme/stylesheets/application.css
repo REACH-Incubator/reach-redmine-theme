@@ -97,10 +97,10 @@ h4 {
   height: 35px; }
 
 #query_form_content {
-  font-size: 1.2em; }
+  font-size: 1.3em; }
 
 .buttons {
-  font-size: 1.2em; }
+  font-size: 1.3em; }
 
 #errorExplanation {
   font-size: 1.5em; }
@@ -117,6 +117,8 @@ h4 {
 #sidebar {
   background-color: #0b1d46;
   color: #ffffff; }
+  #sidebar p {
+    font-size: 1.3em; }
   #sidebar h3 {
     color: #ffffff;
     font-size: 1.3em; }
@@ -127,10 +129,10 @@ h4 {
       text-decoration: none; }
   #sidebar ul li {
     color: #ffffff;
-    font-size: 1.2em; }
+    font-size: 1.3em; }
     #sidebar ul li label a {
       color: #ffffff;
-      font-size: 1.2em; }
+      font-size: 1.3em; }
 
 input {
   font-size: 1em; }
@@ -149,7 +151,7 @@ button {
   padding: 20px; }
   #admin-menu a {
     color: #ffffff;
-    font-size: 1.2em; }
+    font-size: 1.6em; }
     #admin-menu a:hover {
       text-decoration: none; }
     #admin-menu a.selected {
@@ -176,7 +178,7 @@ legend {
     text-decoration: none; }
 
 .box {
-  font-size: 1.2em; }
+  font-size: 1.3em; }
 
 input[type="submit"] {
   height: 50px;
@@ -186,6 +188,18 @@ input[type="submit"] {
   border-color: #0c0a32;
   color: #0c0a32;
   font-size: 1.5em; }
+
+.ui-dialog {
+  font-size: 1.3em; }
+
+.ui-widget-header {
+  background: #0b1d46; }
+
+#ajax-modal input {
+  height: 35px; }
+
+.subtitle {
+  font-size: 1.2em !important; }
 
 @media screen and (max-width: 899px) {
   #reach-logo {
