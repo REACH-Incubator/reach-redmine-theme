@@ -1,71 +1,83 @@
 /* load the default Redmine stylesheet */
-@import "../../../stylesheets/application.css";
+@import url(../../../stylesheets/application.css);
+/* load Google Fonts */
 @import "https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap";
-/* move the project menu to the right */
+
+//colors
+$blue_light: #507aaa;
+$blue_medium: #0b1d46;
+$blue_dark: #0c0a32;
+$grey_light: #c6c6c6;
+$white: #ffffff;
+$yellow_light: #ffdead;
+$yellow_medium: #e7b773;
+
+//fonts
+$raleway: 'Raleway';
+$helvetica: 'Helvetica';
+$arial: 'Arial';
+$lucida: 'Lucida';
+$font_type: 'sans-serif';
+
+//urls
+$background_image: url('../images/Reach-Background.jpg');
+
 body {
-  font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;
+  font-family: $raleway, $helvetica, $arial, $lucida, $font_type;
 }
 #content {
   h1 {
-    color: #0b1d46;
+    color: $blue_medium;
   }
   .tabs {
-    ul {
-      li {
-        a.selected {
-          color: #0b1d46;
-        }
-      }
-    }
     font-size: 1.3em;
+    ul li a.selected {
+      color: $blue_medium;
+    }
   }
 }
 h2 {
-  color: #0b1d46;
+  color: $blue_medium;
 }
 h3 {
-  color: #0b1d46;
+  color: $blue_medium;
   font-size: 1.6em;
 }
 h4 {
-  color: #0b1d46;
+  color: $blue_medium;
 }
 #header {
-  background: #507AAA url(../images/Reach-Background.jpg) no-repeat 2px;
+  background: $blue_light $background_image no-repeat 2px;
   min-height: 13em;
-  >h1 {
+  > h1 {
     display: none;
   }
 }
 #main-menu {
   left: auto;
-  right: 0px;
-  li {
-    a {
-      font-size: 1.5em;
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-    a.selected {
-      color: #0b1d46;
+  right: 0;
+  li a {
+    font-size: 1.5em;
+    margin-left: 5px;
+    margin-right: 5px;
+    &.selected {
+      color: $blue_medium;
     }
   }
 }
 #top-menu {
-  background: #0c0a32;
+  background: $blue_dark;
   height: 30px;
   padding: 15px;
-  font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;
-  >ul {
+  font-family: $raleway, $helvetica, $arial, $lucida, $font_type;
+  > ul {
     font-size: 1.8em;
   }
   li {
     margin-right: 10px;
-    >a {
-      &:hover {
-        text-decoration: none;
-        color: #c6c6c6;
-      }
+    > a:hover {
+      text-decoration: none;
+      color: $grey_light;
     }
   }
 }
@@ -74,11 +86,9 @@ h4 {
 }
 #loggedas {
   font-size: 1.8em;
-  a {
-    &:hover {
-      text-decoration: none;
-      color: #c6c6c6;
-    }
+  a:hover {
+    text-decoration: none;
+    color: $grey_light;
   }
 }
 #reach-logo {
@@ -88,56 +98,49 @@ h4 {
 }
 #login-form {
   font-size: 1.3em;
-  color: white;
-  background-color: #0b1d46;
-  border: #0c0a32;
+  color: $white;
+  background-color: $blue_medium;
+  border: $blue_dark;
 }
 .lost_password {
-  color: white !important;
+  color: $white !important;
   &:hover {
     text-decoration: none !important;
-    color: #c6c6c6 !important;
+    color: $grey_light !important;
   }
 }
 #quick-search {
   margin: 20px;
-  >form {
-    >label {
-      >a {
-        font-size: 1.5em;
-        &:hover {
-          text-decoration: none;
-        }
-      }
-    }
-  }
   #q {
     height: 35px;
     margin-left: 10px;
     font-size: 1.5em;
     margin-top: 0;
   }
-}
-#project-jump.drdn {
-  width: 200px;
-  display: inline-block;
-  font-size: 1.5em;
+  > form > label > a {
+    font-size: 1.5em;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 #project-jump {
+  &.drdn {
+    width: 200px;
+    display: inline-block;
+    font-size: 1.5em;
+  }
   .drdn-trigger {
     height: 35px;
   }
 }
 #query_form_content {
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 .buttons {
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 #errorExplanation {
-  font-size: 1.5em;
-}
-div.flash {
   font-size: 1.5em;
 }
 .nodata {
@@ -150,29 +153,28 @@ div.flash {
   font-size: 1.5em;
 }
 #sidebar {
-  background-color: #0b1d46;
-  color: white;
-  h3 {
-    color: white;
+  background-color: $blue_medium;
+  color: $white;
+  p {
     font-size: 1.3em;
   }
-  ul {
-    li {
-      color: white;
-      font-size: 1.2em;
-      label {
-        a {
-          color: white;
-          font-size: 1.2em;
-        }
-      }
-    }
+  h3 {
+    color: $white;
+    font-size: 1.3em;
   }
   a {
-    color: navajowhite;
+    color: $yellow_light;
     &:hover {
-      color: #e7b773;
+      color: $yellow_medium;
       text-decoration: none;
+    }
+  }
+  ul li {
+    color: $white;
+    font-size: 1.3em;
+    label a {
+      color: $white;
+      font-size: 1.3em;
     }
   }
 }
@@ -188,15 +190,18 @@ textarea {
 button {
   font-size: 1em;
 }
-
 #admin-menu {
-  background-color: #0b1d46;
+  background-color: $blue_medium;
   padding: 20px;
   a {
-    color: white;
-    font-size: 1.2em;
+    color: $white;
+    font-size: 1.6em;
     &:hover {
       text-decoration: none;
+    }
+    &.selected {
+      background-color: $blue_light;
+      color: $white;
     }
   }
 }
@@ -218,35 +223,66 @@ legend {
 .contextual {
   font-size: 1.3em;
 }
-.pagination {
-  ul.pages {
-    li {
-      a {
-        font-size: 1.3em;
-      }
-    }
-  }
-}
-.splitcontentleft {
-  >ul {
-    >li {
-      font-size: 1.3em;
-    }
-  }
-}
 .issue-report {
   font-size: 1.3em;
-  a {
-    &:hover {
-      text-decoration: none;
-    }
+  a:hover {
+    text-decoration: none;
   }
 }
-@media screen and (max-width: 899px) {
+.box {
+  font-size: 1.3em;
+}
+input[type="submit"] {
+  height: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-width: medium;
+  border-color: $blue_dark;
+  color: $blue_dark;
+  font-size: 1.5em;
+}
+.ui-dialog {
+  font-size: 1.3em;
+}
+.ui-widget-header {
+  background: $blue_medium;
+}
+
+#ajax-modal {
+  input {
+    height: 35px;
+  }
+}
+
+.subtitle {
+  font-size: 1.2em !important;
+}
+
+@media screen and(max-width: 899px) {
   #reach-logo {
     display: none;
   }
   .flyout-menu {
-    background-color: #0b1d46 !important;
+    background-color: $blue_medium !important;
   }
+  #login-form {
+    input {
+      height: 32px !important;
+    }
+    input[type=submit] {
+      height: 50px !important;
+      border-width: medium;
+      border-color: $blue_dark;
+      color: $blue_dark;
+    }
+  }
+}
+div.flash {
+  font-size: 1.5em;
+}
+.pagination ul.pages li a {
+  font-size: 1.3em;
+}
+.splitcontentleft > ul > li {
+  font-size: 1.3em;
 }
