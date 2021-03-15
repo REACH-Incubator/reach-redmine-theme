@@ -1,5 +1,5 @@
 document.onreadystatechange = function () {
-    var state = document.readyState
+    let state = document.readyState
     if (state == 'interactive') {
         // document.getElementById('interactive').innerHTML = 'Document ready to accept interactions.'
     } else if (state == 'complete') {

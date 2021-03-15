@@ -7,6 +7,8 @@
 $blue_light: #507aaa;
 $blue_medium: #0b1d46;
 $blue_dark: #0c0a32;
+$blue_warning_back: #4b748c;
+$blue_warning_border: #295682;
 $grey_light: #c6c6c6;
 $white: #ffffff;
 $yellow_light: #ffdead;
@@ -41,7 +43,7 @@ h2 {
 }
 h3 {
   color: $blue_medium;
-  font-size: 1.6em;
+  font-size: 1.3em;
 }
 h4 {
   color: $blue_medium;
@@ -195,7 +197,7 @@ button {
   padding: 20px;
   a {
     color: $white;
-    font-size: 1.6em;
+    font-size: 1.3em;
     &:hover {
       text-decoration: none;
     }
@@ -233,7 +235,7 @@ legend {
   font-size: 1.3em;
 }
 input[type="submit"] {
-  height: 50px;
+  height: 50px !important;
   padding-left: 40px;
   padding-right: 40px;
   border-width: medium;
@@ -241,6 +243,7 @@ input[type="submit"] {
   color: $blue_dark;
   font-size: 1.5em;
 }
+
 .ui-dialog {
   font-size: 1.3em;
 }
@@ -256,6 +259,30 @@ input[type="submit"] {
 
 .subtitle {
   font-size: 1.2em !important;
+}
+
+
+div.flash {
+  font-size: 1.5em;
+}
+.pagination ul.pages li a {
+  font-size: 1.3em;
+}
+.splitcontentleft > ul > li {
+  font-size: 1.3em;
+}
+
+.nodata, .warning {
+  text-align: center;
+  background-color: $blue_warning_back;
+  border-color: $blue_warning_border;
+  color: $white;
+}
+
+.buttons {
+  label, select, a {
+    margin-right: 5px;
+  }
 }
 
 @media screen and(max-width: 899px) {
@@ -277,12 +304,12 @@ input[type="submit"] {
     }
   }
 }
-div.flash {
-  font-size: 1.5em;
-}
-.pagination ul.pages li a {
-  font-size: 1.3em;
-}
-.splitcontentleft > ul > li {
-  font-size: 1.3em;
+
+@media screen and(max-width: 1335px) {
+  .tabular label {
+    width: 70%;
+  }
+  .tabular input {
+    max-width: 80%;
+  }
 }
