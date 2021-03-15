@@ -181,7 +181,7 @@ legend {
   font-size: 1.3em; }
 
 input[type="submit"] {
-  height: 50px;
+  height: 50px !important;
   padding-left: 40px;
   padding-right: 40px;
   border-width: medium;
@@ -201,6 +201,24 @@ input[type="submit"] {
 .subtitle {
   font-size: 1.2em !important; }
 
+div.flash {
+  font-size: 1.5em; }
+
+.pagination ul.pages li a {
+  font-size: 1.3em; }
+
+.splitcontentleft > ul > li {
+  font-size: 1.3em; }
+
+.nodata, .warning {
+  text-align: center;
+  background-color: #4b748c;
+  border-color: #295682;
+  color: #ffffff; }
+
+.buttons label, .buttons select, .buttons a {
+  margin-right: 5px; }
+
 @media screen and (max-width: 899px) {
   #reach-logo {
     display: none; }
@@ -215,13 +233,11 @@ input[type="submit"] {
     border-width: medium;
     border-color: #0c0a32;
     color: #0c0a32; } }
-div.flash {
-  font-size: 1.5em; }
+@media screen and (max-width: 1335px) {
+  .tabular label {
+    width: 70%; }
 
-.pagination ul.pages li a {
-  font-size: 1.3em; }
-
-.splitcontentleft > ul > li {
-  font-size: 1.3em; }
+  .tabular input {
+    max-width: 80%; } }
 
 /*# sourceMappingURL=application.css.map */
