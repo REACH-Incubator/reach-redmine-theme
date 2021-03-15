@@ -17,7 +17,7 @@ h2 {
 
 h3 {
   color: #0b1d46;
-  font-size: 1.6em; }
+  font-size: 1.3em; }
 
 h4 {
   color: #0b1d46; }
@@ -151,7 +151,7 @@ button {
   padding: 20px; }
   #admin-menu a {
     color: #ffffff;
-    font-size: 1.6em; }
+    font-size: 1.3em; }
     #admin-menu a:hover {
       text-decoration: none; }
     #admin-menu a.selected {
